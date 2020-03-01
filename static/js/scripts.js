@@ -17,11 +17,17 @@ function initMap() {
             lng: -6.306677
         },
         animation: google.maps.Animation.DROP,
-        title: 'Where ze bears are!'
+        title: 'This is a place'
+    });
+    
+    marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+    });
+
+    const infoWindow = new google.maps.InfoWindow({
+        content: "<h3>Test Content</h3>"
     });
 }
-
-initMap();
 
 let checkbox = document.querySelector("input[name=showMarker]");
 
@@ -32,3 +38,6 @@ checkbox.addEventListener('change', () => {
         marker.setMap(null);
     }
 });
+
+//----- LOAD INITIALIZE FUNCTION -----//
+google.maps.event.addDomListener(window, 'load', initMap);
