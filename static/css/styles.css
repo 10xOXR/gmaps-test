@@ -1,0 +1,22 @@
+main {
+    display: grid;
+    height: 95vh;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+nav,
+.footer {
+    background-color: #e3f2fd;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#map {
+    margin-top: 15vh;
+    height: 70vh;
+    width: 100vw;
+}
