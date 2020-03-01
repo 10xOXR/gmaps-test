@@ -15,8 +15,12 @@ nav,
     padding: 10px 0;
 }
 
+.form-check {
+    margin-top: 10vh;
+    padding: 10px 0;
+}
+
 #map {
-    margin-top: 15vh;
     height: 70vh;
     width: 100vw;
 }
