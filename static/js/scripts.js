@@ -1,8 +1,5 @@
 let map;
 let markers = [];
-let poi
-
-
 
 function initMap() {
 
@@ -26,7 +23,7 @@ function initMap() {
             markers.push(marker);
         };
     })()
-    
+
     function setMarkers(map) {
         for (let i = 0; i < markers.length; i++) {
             setTimeout(function () {
